@@ -1,0 +1,18 @@
+{
+  "url": "https://example.com",
+  "appName": "WebApp",
+  "header": true,
+  "headerText": "WebApp",
+  "headerBg": "#12151A",
+  "headerFg": "#F5F5F1",
+  "splash": true,
+  "splashText": "WebApp",
+  "splashSubtitle": "memuat…",
+  "splashBg": "#0B0D10",
+  "splashFg": "#8CD5FF",
+  "splashMs": 1500,
+  "orientation": "auto",
+  "js": true,
+  "zoom": false,
+  "permissions": []
+}

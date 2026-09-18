@@ -1,0 +1,30 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.webtoapk.template'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.webtoapk.template"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    // Debug build cukup untuk template ini -> forge.js menandatangani ULANG
+    // (skema v1) tiap kali APK di-forge, jadi signing config di sini tidak
+    // penting-penting amat; yang penting outputnya .apk bukan .aab.
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'org.json:json:20231013'
+}
